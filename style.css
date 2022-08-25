@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+#encrypter {
+    margin: auto;
+    width: 300px;
+    border: solid 1px #666666;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8);
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#display-box {
+    border-bottom: solid 1px #666666;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    color: #2378FF;
+    background-color: #ededed;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #212c42;
+}
+
+#display-box p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: center;
+    font-size: 26px;
+}
+
+#input-box {
+    position: relative;
+    top: 0;
+    display: block;
+    overflow: auto;
+}
+
+#input {
+    border: inset 2px;
+    resize: none;
+    width: 90%;
+    height: 60px;
+    margin: 4%;
+    margin-bottom: 5px;;
+    padding 0;
+    display:block;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#settings {
+    margin: auto;
+    display: table;
+}
+
+.setting-dial{
+	height: 60px;
+	width: 29px;
+	margin: auto;
+    margin-top: -18;
+	background: -webkit-linear-gradient(top, #8c9093 0%,#b6babd 9%,#ccd2d6 12%,#ffffff 55%,#ccd2d6 88%,#b6babd 91%,#8c9093 100%);
+	background: linear-gradient(to bottom, #adadad 0%,#e2e2e2 14%,#ffffff 35%,#ffffff 65%,#e2e2e2 86%,#adadad 100%);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	float: left;
+	position: relative;
+    cursor: pointer;
+}
+
+.setting-wrapper{
+	width: 30px;
+	padding: 0 4px 0 5px;
+	border-radius: 7px;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8);
+    background-color: white;
+	height: 60px;
+	border: 2px inset;
+	overflow: hidden;
+	margin-left: 0 auto;
+    display: table-cell;
+}
+
+#settings .setting-dial ul{
+    margin-top: 16px;
+    margin-left: 7px;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+	font-size: 26px;
+	line-height: 32px;
+	color: #2378FF;
+	text-shadow: 1px 1px 0 #212c42;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;
+	transition: box-shadow .45s linear, color .25s linear;
+	-webkit-transition: box-shadow .45s linear, color .25s linear;
+    position: absolute;
+}
+
+.btn {
+    background: #29809b;
+    background-image: -webkit-linear-gradient(top, #29809b, #2377ff);
+    background-image: -moz-linear-gradient(top, #29809b, #2377ff);
+    background-image: -ms-linear-gradient(top, #29809b, #2377ff);
+    background-image: -o-linear-gradient(top, #29809b, #2377ff);
+    background-image: linear-gradient(to bottom, #29809b, #2377ff);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 3px #666666;
+    -moz-box-shadow: 1px 1px 3px #666666;
+    box-shadow: 1px 1px 3px #666666;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 7px;
+    border: solid #666666 1px;
+    text-decoration: none;
+    outline-width: 0;
+    margin-bottom: 8px;
+    margin-top: 3px;
+    margin-right: 14px;
+    float: right;
+}
+
+.btn:disabled {
+    background: #ababab;
+    background-image: -webkit-linear-gradient(top, #ababab, #575757);
+    background-image: -moz-linear-gradient(top, #ababab, #575757);
+    background-image: -ms-linear-gradient(top, #ababab, #575757);
+    background-image: -o-linear-gradient(top, #ababab, #575757);
+    background-image: linear-gradient(to bottom, #ababab, #575757);
+}
+
+.btn:hover:enabled {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+
+#status-display {
+    height: 45px;
+    position: relative;
+    padding-top: 10px;
+}
+
+#loading-bar-box {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#loading-bar {
+    width: 0%;
+    height: 30px;
+    background-color: #2378FF;
+    -webkit-box-shadow: 1px 1px 3px #666666;
+    -moz-box-shadow: 1px 1px 3px #666666;
+    box-shadow: 1px 1px 3px #666666;
+    position: absolute;
+}
+
+#message {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 35px;;
+    text-align: center;
+    display: block;
+    z-index: 10;
+}
+
+#setting-text {
+    float: left;
+    margin-top: 0;
+    margin-left: 14px;
+    font-size: 12px;
+    color: #2378FF !important;
+    font-weight: bold;
+    display: none;
+}
+
+.grey-text {
+    font-size: 14px !important;
+    color: #999999 !important;
+    text-shadow: none;
+}
+
+.blue-text {
+    font-size: 16px !important;
+    color: #2378FF !important;
+    font-weight: bold;
+    text-shadow: 1px 0 0 #212c42;
+}
+
+.strong-text {
+    font-size: 16px !important;
+    color: #333333 !important;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.error-text {
+    font-size: 16px !important;
+    color: #ff0224 !important;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.loading-text {
+    font-size: 16px !important;
+    color: #ededed !important;
+    font-weight: bold;
+    text-shadow: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="helperfunctions.js"></script>
+        <script type="text/javascript" src="callbacks.js"></script>
+        <script type="text/javascript" src="listeners.js"></script>
+        <script type="text/javascript" src="rotor.js"></script>
+        <script type="text/javascript" src="enigma.js"></script>
+        <script>
+            var enigma = new Enigma();
+        </script>
+    </head>
+    <body>
+        
+        <div id="encrypter">
+            <div id="display-box">
+                <p>Encryption Setting</p>
+                <div id="settings">
+                    <div class="setting-wrapper">
+                        <div class="setting-dial" id="dial-one"><ul data-combo-num="0"><li>9</li><li>0</li><li>1</li></ul></div>
+                    </div>
+                    <div class="setting-wrapper">
+                        <div class="setting-dial" id="dial-two"><ul data-combo-num="1"><li>9</li><li>0</li><li>1</li></ul>
+                        </div>
+                    </div>
+                    <div class="setting-wrapper">
+                        <div class="setting-dial" id="dial-three"><ul data-combo-num="2"><li>9</li><li>0</li><li>1</li></ul></div>
+                    </div>
+                </div>
+                <div id="status-display">
+                    <div id="loading-bar-box">
+                        <p id="message" class="grey-text"></p>
+                        <div id="loading-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="input-box">
+                <div id='input' class="grey-text" data-empty="true" spellcheck="false" contenteditable>Enter text to encrypt or decrypt...</div>
+                <button id="go-button" type="button" class="btn" onclick="go()" disabled>GO</button>
+                <p id="setting-text">Setting:</p>
+            </div>
+        </div>
+    </body>
+</html>
