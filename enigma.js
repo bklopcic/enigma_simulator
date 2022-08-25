@@ -38,7 +38,7 @@ Enigma.prototype.rotateRotors = function()
     
     if (this.lettersEncoded % 5 == 0)
     {
-        this.rotors[1].rotate[1];
+        this.rotors[1].rotate(1);
     }
     
     if (this.lettersEncoded % 10 == 0)
